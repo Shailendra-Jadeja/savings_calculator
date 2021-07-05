@@ -21,13 +21,6 @@ miscellaneous_expenses = 30
 petrol = 65
 
 
-def tax_aggregate(expected_income_annually):
-    if expected_income_annually <= 14000:
-        return tax_bracket_1
-    elif 14000 < expected_income_annually <= 48000:
-        return
-
-
 def tax_in_dollars_annually(expected_income_annually):
     if expected_income_annually <= 14000:
         return expected_income_annually * tax_bracket_1 / 100
